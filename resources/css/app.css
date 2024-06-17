@@ -1,0 +1,433 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-family: sans-serif;
+    height: 100%;
+}
+
+body {
+    color: #333;
+    background-color: #fff;
+    min-height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+    vertical-align: baseline;
+    display: inline-block;
+}
+
+audio:not([controls]) {
+    height: 0;
+    display: none;
+}
+
+[hidden],
+template {
+    display: none;
+}
+
+a {
+    background-color: transparent;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+b,
+strong {
+    font-weight: 700;
+}
+
+dfn {
+    font-style: italic;
+}
+
+h1 {
+    margin: 0.67em 0;
+    font-size: 2em;
+}
+
+mark {
+    color: #000;
+    background: #ff0;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    vertical-align: baseline;
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+img {
+    border: 0;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+}
+
+pre {
+    overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace;
+    font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+button {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+input {
+    line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+input[type="search"] {
+    -webkit-appearance: none;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+legend {
+    border: 0;
+    padding: 0;
+}
+
+textarea {
+    overflow: auto;
+}
+
+optgroup {
+    font-weight: 700;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td,
+th {
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    display: inline-block;
+}
+
+.body {
+    /* color: #fff; */
+    /* background-color: #000; */
+    font-family: Lufga, sans-serif;
+    font-size: 0.52vw;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+.page-wrapper {
+    z-index: 1;
+    position: relative;
+}
+
+.partners-wrapper {
+    display: flex;
+    animation: scroll 30s linear infinite;
+}
+
+@layer base {
+    @font-face {
+        font-family: "Founders Grotesk";
+        font-style: normal;
+        font-weight: 500;
+        src: url("/public/assets/fonts/FoundersGrotesk-Medium.otf")
+            format("opentype");
+    }
+}
+
+@layer base {
+    @font-face {
+        font-family: "Founders Grotesk";
+        font-style: normal;
+        font-weight: 300;
+        src: url("/public/assets/fonts/FoundersGrotesk-Light.otf")
+            format("opentype");
+    }
+}
+
+.hide-scrollbar {
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.hide-scrollbar::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.benefits {
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(/public/assets/imgs/pill_bg.svg);
+}
+
+.scroll-wrapper {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.scroll img {
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.scroll-wrapper .scroll-content {
+    display: flex;
+    animation: scroll 30s linear infinite;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    justify-content: center;
+}
+
+.carousel-track {
+    display: flex;
+    animation: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    flex-shrink: 0;
+    animation: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.carousel-item.visible {
+    opacity: 1;
+}
+
+.carousel-track img {
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.ripple-button {
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.ripple-button:hover {
+    background-color: #475467;
+}
+
+.ripple-button .ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(253, 139, 0, 0.5);
+    transform: scale(0);
+    opacity: 1;
+    animation: ripple 0.6s ease-out forwards;
+    z-index: 0;
+}
+
+.ripple.shrink {
+    animation: shrinkRipple 0.5s ease-out forwards;
+}
+
+.ripple-button > span {
+    position: relative;
+    z-index: 1;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    gap: 6px;
+}
+
+.dots > .dot {
+    width: 8px;
+    height: 8px;
+    background-color: #475467;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.dots > .dot.active {
+    background-color: #0d1320;
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0.6;
+    }
+}
+@keyframes shrinkRipple {
+    from {
+        transform: scale(4);
+        opacity: 0.6;
+    }
+    to {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+@keyframes carousel {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.rotating-image-container {
+    position: relative;
+    overflow: hidden;
+}
+.rotating-image {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+    transform-origin: center;
+    cursor: pointer;
+}
+
+.hero {
+    /* background-color: #29344A; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/public/assets/imgs/hero.svg);
+}
