@@ -1,5 +1,5 @@
-<section class="min-h-screen pt-[70px] pl-[30px] lg:pt-[193px] lg:pl-[120px] bg-[#F0F2F9]">
-    <div class="flex w-full flex-col justify-center items-center md:flex-row md:items-center md:justify-between">
+<section class="min-h-screen pt-[70px] px-[30px] lg:pt-[193px] lg:pl-[120px] bg-[#F0F2F9]">
+    <div class="flex gap-[135px] w-full  flex-row  justify-between">
         <div>
             <div>
                 <h2 class="text-[#101828]  font-medium -tracking-[0.02em] text-nowrap text-4xl md:text-[96px] md:leading-[90px] font-grotesk">How it Works</h2>
@@ -12,33 +12,35 @@
                 <button class="py-3 text-nowrap px-4 md:py-5 md:px-12 bg-[#101828] text-xs sm:text-[1rem] leading-[18px] font-grotesk text-white rounded-[150px] lg:rounded-[1000px] lg:h-[50px] lg:w-[310px]">Check your Phone Compatibility</button>
             </div>
         </div>
-        <div class='relative'>
-            <div class='md:max-w-[600px]'>
-                <img src="{{asset('assets/imgs/clay_2.svg')}}" alt="Clay Gif">
-                {{-- <video width="227" height="493" autoplay>
+        <div class='relative md:max-w-[600px]'>
+            {{-- <div class='md:max-w-[600px]'> --}}
+            {{-- <img src="{{asset('assets/imgs/clay_2.svg')}}" alt="Clay Gif"> --}}
+            {{-- </div> --}}
+            <div class='relative md:-mt-5'>
+                <video width="" class="" autoplay>
                     <source src="{{asset('assets/files/phone-1-gif.mp4')}}" type="video/mp4">
-                </video> --}}
-            </div>
-            <div class='absolute top-[10%] left-[10%] lg:left-[35%]'>
-                <img src="{{asset('assets/imgs/phone1_frame.svg')}}" alt="Phone Frame" class="w-full lg:w-[250px] aspect-ratio-video">
-                <video autoplay controls class="absolute top-[2.2%] rounded-[30px] left-[4.3%] lg:w-[250px] lg:h-[493px] w-full aspect-ratio-video">
+                </video>
+                <img src="{{asset('assets/imgs/phone1_frame.svg')}}" alt="Phone Frame" class="absolute  left-[4%]  lg:h-[493px]">
+                <video autoplay class="absolute md:top-[8px] top-[0px] z-0  rounded-[20px] md:rounded-[40px] left-[0px] md:left-[24px] lg:h-[472px]">
                     <source src="{{asset('assets/files/phone-1-video.mp4')}}" type="video/mp4">
                 </video>
             </div>
         </div>
     </div>
-    <div class="pt-[200px]">
-        <div class="flex flex-col md:flex-row justify-center relative">
+    <div class="mt-[200px]">
+        <div class="md:flex hidden flex-row justify-center relative">
             <div class="absolute -top-[20%] md:max-w-[600px]">
-                <img src="{{asset('assets/imgs/phone_2_gif.svg')}}" alt="" srcset="">
+                 <video width="227" height='493' class="" autoplay>
+                     <source src="{{asset('assets/files/phone-1-gif.mp4')}}" type="video/mp4">
+                 </video>
             </div>
             <div class="relative">
                 <img src="{{asset('assets/imgs/phone_2_frame.svg')}}" alt="">
-                <img src="{{asset('assets/imgs/phone_2_img.svg')}}" alt="" class="absolute top-[4%]  left-[2%] bottom-0 rounded-[30px]">
+                <img src="{{asset('assets/imgs/phone_2_img.svg')}}" alt="" class="absolute top-[4%] left-[2%] bottom-0 rounded-[30px]">
             </div>
         </div>
     </div>
-    <div class="mt-[100px] mb-10 px-5 md:mt-[135px]">
+    <div class=" mb-10 px-5 mt-[135px]">
         <div class="flex justify-center">
             <div class="flex-col">
                 <h6 class="text-[#344054] text-2xl md:text-[32px] text-left font-medium md:leading-[38px] font-grotesk">Choose a Plan</h6>

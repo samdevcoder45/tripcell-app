@@ -39,9 +39,9 @@ $img_links = [
                 <div class="md:mt-[44px] md:ml-[100px] md:mb-[64px] hidden md:block">
                     <img src="{{asset('assets/imgs/vector_60.svg')}}" alt="" />
                 </div>
-                <div class="hidden md:block">
-                    <h3 class="font-medium md:text-[40px] text-[20px] leading-6 md:leading-[48px] -tracking-[2%] font-grotesk">Over 200</h3>
-                    <div class="md:max-w-[198px] md:h-[50px] ">
+                <div class="hidden md:block md:pl-[80px]">
+                    <h3 class="font-medium md:text-[40px] text-[20px]  leading-6 md:leading-[48px] -tracking-[2%] font-grotesk">Over 200</h3>
+                    <div class="md:min-w-[198px] md:h-[50px] ">
                         <p class="text-gray text-sm md:text-[24px] md:leading-[27px] font-[300]"><span class="mx-3">Countries</span> <br> Travel eSIM Available</p>
                     </div>
                 </div>
