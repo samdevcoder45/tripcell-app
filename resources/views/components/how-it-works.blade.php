@@ -13,9 +13,6 @@
             </div>
         </div>
         <div class='relative md:max-w-[600px]'>
-            {{-- <div class='md:max-w-[600px]'> --}}
-            {{-- <img src="{{asset('assets/imgs/clay_2.svg')}}" alt="Clay Gif"> --}}
-            {{-- </div> --}}
             <div class='relative md:-mt-5'>
                 <video width="" class="" autoplay>
                     <source src="{{asset('assets/files/phone-1-gif.mp4')}}" type="video/mp4">
@@ -28,7 +25,7 @@
         </div>
     </div>
     <div class="mt-[200px]">
-        <div class="md:flex hidden flex-row justify-center relative">
+        <div class="md:flex flex-row justify-center relative">
             <div class="absolute -top-[20%] md:max-w-[600px]">
                  <video width="227" height='493' class="" autoplay>
                      <source src="{{asset('assets/files/phone-1-gif.mp4')}}" type="video/mp4">
